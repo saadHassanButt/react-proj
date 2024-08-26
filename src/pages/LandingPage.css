@@ -1,0 +1,62 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-content {
+    margin-right: 20px;
+}
+
+.right-content {
+    max-width: 50%;
+    text-align: left; /* Align text to the left in the right column */
+}
+
+.landing-page h1, .landing-page p, .landing-page .get-started {
+    position: relative;
+    z-index: 1;
+}
+
+.get-started {
+    background-color: green;
+    color: azure;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Apply background image directly to the body */
+body {
+    background-image: url('../assets/araceli-magno-0M-eIHnOEwc-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}

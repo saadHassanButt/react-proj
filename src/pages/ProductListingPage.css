@@ -1,0 +1,25 @@
+/* Ensure body and html are set properly */
+html, body {
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+/* Ensure the main container has no fixed height */
+.product-listing-page {
+  margin-top: 10%;
+  padding: 50px;
+  /* Remove overflow-y */
+}
+.product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-grow: 1; /* This allows the container to grow as needed */
+    
+  }
+  
+  
